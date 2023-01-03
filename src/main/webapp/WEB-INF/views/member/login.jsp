@@ -8,14 +8,25 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+	crossorigin="anonymous">
+	
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous">
+</script>
 @import
 	url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-* {
+*{
 	box-sizing: border-box;
-}
+} 
 
-body {
+main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,12 +36,12 @@ body {
 	margin: -20px 0 50px;
 }
 
-h1 {
+main h1 {
 	font-weight: bold;
 	margin: 0;
 }
 
-p {
+main p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -42,14 +53,14 @@ span {
 	font-size: 12px;
 }
 
-a {
+main a {
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
-button {
+main button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background-color: #FF4B2B;
@@ -81,7 +92,7 @@ input {
 	width: 100%;
 }
 
-.container {
+.container2 {
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
@@ -159,19 +170,22 @@ input {
 	width: 40px;
 }
 </style>
+<jsp:include page="../include/header.jsp"/>
 </head>
 <body>
-	<div class="container" id="container">
+	
+	<main>
+		<div class="container2" id="container2">
 		<div class="form-container log-in-container">
 			<form action="#">
-				<h1>Login</h1>
+				<h1>로그인</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
 					<a href="#" class="social"><i class="fab fa fa-twitter fa-2x"></i></a>
 				</div>
 				<span>or use your account</span>
-				<input type="email"	placeholder="Email" /> 
-				<input type="password" placeholder="Password" /> 
+				<input type="email"	placeholder="이메일" /> 
+				<input type="password" placeholder="비밀번호" /> 
 				<a href="#">Forgot your password?</a>
 				<button>Log In</button>
 			</form>
@@ -186,6 +200,9 @@ input {
 			</div>
 		</div>
 	</div>
+	</main>
+	
 </body>
+<jsp:include page="../include/footer.jsp"/>
 </html>
 
