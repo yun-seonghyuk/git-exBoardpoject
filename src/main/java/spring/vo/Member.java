@@ -1,5 +1,7 @@
 package spring.vo;
 
+import java.util.Date;
+
 public class Member {
 	private String email;
 	private String password;
@@ -8,8 +10,26 @@ public class Member {
 	private String phone;
 	private String name;
 	private String nickName;
+	private String type;
 	
 	public Member() {}
+	
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public Date getRegdate() {
+		return regdate;
+	}
+
+	public void setRegdate(Date regdate) {
+		this.regdate = regdate;
+	}
+	private Date regdate;
 	
 	public String getEmail() {
 		return email;
